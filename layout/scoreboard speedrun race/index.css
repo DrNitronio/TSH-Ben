@@ -1,0 +1,194 @@
+body {
+  font-family: var(--font);
+  letter-spacing: 1px;
+  font-weight: bold;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
+.container {
+  width: 350px;
+  height: 38px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  color: var(--text-color);
+  z-index: 9
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.12))
+    drop-shadow(0 3px 1px rgba(0, 0, 0, 0.14))
+    drop-shadow(0 1px 5px rgba(0, 0, 0, 0.12))
+    drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.container .bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(24px 0%, 100% 0%, calc(100% - 24px) 100%, 0% 100%);
+}
+
+.container .bg > div {
+  background: var(--bg-color);
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    27px 4px,
+    calc(100% - 46px) 4px,
+    calc(100% - 66px) calc(100% - 4px),
+    7px calc(100% - 4px)
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container.t1 .bg {
+  background: #FFC500;
+}
+
+.container.t2 .bg {
+  background: #00FFF7;
+}
+
+.doubles .container {
+  transform: scaleX(0.9);
+}
+
+.singles .t1.p1.container {
+  left: 18px;
+  top: 706px;
+}
+
+.singles .t2.p1.container {
+  left: 1540px;
+  top: 706px;
+}
+
+.doubles .t1.p1.container {
+  left: 8px;
+  top: 706px;
+}
+
+.doubles .t1.p2.container {
+  left: 296px;
+  top: 706px;
+}
+
+.doubles .t2.p1.container {
+  left: 1290px;
+  top: 706px;
+}
+
+.doubles .t2.p2.container {
+  left: 1570px;
+  top: 706px;
+}
+
+.container .name {
+  color: var(--text-color);
+  position: absolute;
+  left: 30px;
+  top: 2px;
+  width: 210px;
+  height: 34px;
+  font-size: 22px;
+  padding-left: 4px;
+  padding-right: 4px;
+  justify-content: left;
+  text-transform: uppercase;
+}
+
+.twitter-container {
+  z-index: -1;
+  top: 20px;
+  left: 120px;
+  width: 238px;
+  height: 49px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  color: var(--text-color);
+  background: var(--bg-color);
+  clip-path: polygon(30px 0%, 100% 0%, calc(100% - 30px) 100%, 0% 100%);
+}
+
+.twitter {
+  position: absolute;
+  left: 26px;
+  top: 22px;
+  width: 170px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter_logo {
+  -webkit-mask-image: url(./twitter.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  background-color: var(--text-color);
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.t1 .sponsor {
+  color: var(--p1-sponsor-color);
+}
+
+.t2 .sponsor {
+  color: var(--p2-sponsor-color);
+}
+
+.player.container {
+  width: 100%;
+  height: 42px;
+  padding: 4px 16px;
+}
+
+.flag {
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 34px;
+  height: 22px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.flagcountry {
+  position: absolute;
+  top: 40px;
+  left: 34px;
+}
+
+.flagstate {
+  position: absolute;
+  top: 40;
+  left: 80px;
+}
