@@ -1,0 +1,9 @@
+pyqt5
+requests
+py7zr
+deepdiff
+qdarkstyle
+Pillow
+Flask
+flask-cors
+asyncio
